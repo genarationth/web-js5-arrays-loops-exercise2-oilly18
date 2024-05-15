@@ -21,11 +21,7 @@ console.log(people)
 // It turns out David was saving a spot for his friend Renata. She shows up and goes behind him in the line. One more person (Elena) shows up and goes to the end of the line.
 // What does the queue look like? 
 
-people.shift('David');
-console.log(people);
-people.unshift('Renata');
-console.log(people);
-people.unshift('David');
+people.splice(1,0,'Renata');
 console.log(people);
 people.push('Elena');
 console.log(people);
